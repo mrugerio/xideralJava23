@@ -8,6 +8,8 @@ public class Empleado {
 	private boolean esSoltero; //false
 	private StringBuilder puesto; //null
 	
+	public Empleado() {}
+	
 	public Empleado(String nombre, int edad, boolean esSoltero, StringBuilder puesto) {
 		this.nombre = nombre;
 		this.edad = edad;

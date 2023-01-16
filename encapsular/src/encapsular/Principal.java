@@ -5,7 +5,7 @@ public class Principal {
 	public static void main(String[] args) {
 
 		Empleado e1 = new Empleado("Andronico",
-				-10,false,new StringBuilder("Developer"));
+				20,false,new StringBuilder("Developer"));
 		
 		//e1.edad = -10;
 		e1.setEdad(-10);
