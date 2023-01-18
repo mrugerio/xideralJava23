@@ -1,5 +1,6 @@
 package com.curso.v7;
 
+//NO SE PUEDEN CREAR OBJETOS DE CLASES ABSTRACTAS
 public abstract class Operacion {
 	
 	int x;
@@ -10,6 +11,8 @@ public abstract class Operacion {
 		this.y = y;
 	}
 	
+	//METODOS SIN COMPORTAMIENTO
+	//LAS SUBCLASES ESTAN OBLIGADAS A DEFINIR EL COMPORTAMIENTO
 	abstract int ejecuta();
 
 	@Override

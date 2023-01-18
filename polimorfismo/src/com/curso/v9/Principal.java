@@ -1,4 +1,4 @@
-package com.curso.v7;
+package com.curso.v9;
 
 import java.util.ArrayList;
 
@@ -33,9 +33,8 @@ public class Principal {
 	
 		for (int x=0;x <lista.size();++x) {
 			
-			//POLIMORFISMO
 			Operacion ope = lista.get(x);
-			System.out.println(ope.toString());
+			System.out.println(ope);
 			System.out.println(ope.ejecuta());
 			
 		}
