@@ -1,4 +1,4 @@
-package con.singleton;
+package com.consingleton;
 
 public class Conexion {
 	

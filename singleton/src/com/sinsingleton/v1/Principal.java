@@ -1,4 +1,4 @@
-package con.singleton;
+package com.sinsingleton.v1;
 
 public class Principal {
 
