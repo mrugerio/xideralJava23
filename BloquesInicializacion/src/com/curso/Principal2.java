@@ -30,6 +30,11 @@ public class Principal2 {
 		Principal2 opp = new Principal2();
 		System.out.println(opp.contador);
 		
+		
+//		int x = 1;
+//		int y = 010; //8 //OCTAL
+//		System.out.println("Resultado");
+//		System.out.println(x+y);
 
 	}
 	
