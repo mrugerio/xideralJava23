@@ -6,41 +6,24 @@ public class Principal {
 
 	public static void main(String[] args) {
 
-		List<Estudiante> estudiantes = new ArrayList<>();
-		estudiantes.add(new Estudiante("Juan", 18, 8.5));
-		estudiantes.add(new Estudiante("Maria", 20, 9.1));
-		estudiantes.add(new Estudiante("Pedro", 22, 7.8));
-		estudiantes.add(new Estudiante("Ana", 19, 9.2));
-		estudiantes.add(new Estudiante("Luis", 21, 8.3));
-		estudiantes.add(new Estudiante("Sofia", 20, 9.5));
-		estudiantes.add(new Estudiante("Carlos", 18, 7.2));
-		estudiantes.add(new Estudiante("Isabella", 19, 8.9));
-		estudiantes.add(new Estudiante("Fernando", 21, 7.5));
-		estudiantes.add(new Estudiante("Valeria", 20, 9.1));
-		estudiantes.add(new Estudiante("Jorge", 18, 8.7));
-		estudiantes.add(new Estudiante("Gabriela", 19, 9.3));
-		estudiantes.add(new Estudiante("Diego", 21, 8.0));
-		estudiantes.add(new Estudiante("Paula", 20, 9.0));
-		estudiantes.add(new Estudiante("Alejandro", 18, 7.8));
-		estudiantes.add(new Estudiante("Juliana", 19, 9.2));
-		estudiantes.add(new Estudiante("Sebastian", 21, 8.5));
-		estudiantes.add(new Estudiante("Camila", 20, 9.1));
+		Estudiante e1 =new Estudiante("Juan", 18, 8.5);
+		Estudiante e2 =new Estudiante("Maria", 20, 9.1);
+		Estudiante e3 =new Estudiante("Pedro", 22, 7.8);
+		Estudiante e4 =new Estudiante("Ana", 19, 9.2);
+		Estudiante e5 =new Estudiante("Ana", 19, 9.2);
 		
+		Set<Estudiante> setEstudiantes = new HashSet<>();
 		
-		Collections.sort(estudiantes, (o1,o2) -> o2.getEdad() - o1.getEdad());
-		estudiantes.forEach(System.out::println);
+		setEstudiantes.add(e1);
+		setEstudiantes.add(e2);
+		setEstudiantes.add(e3);
+		setEstudiantes.add(e4);
+		setEstudiantes.add(e5);
 		
-		System.out.println("--------------");
+		System.out.println(e4.equals(e5)); //true
 		
-		Collections.sort(estudiantes, (e1,e2) -> e2.getNombre().compareTo(e1.getNombre()));
-		estudiantes.forEach(System.out::println);
-		
-		System.out.println("--------------");
-		
-		Collections.sort(estudiantes, 
-				(x, y) -> (int)(((y.getPromedio())*1000)-((x.getPromedio())*1000)));
-		estudiantes.forEach(System.out::println);
-		
+		setEstudiantes.forEach(System.out::println);
+
 		
 	}
 
