@@ -21,19 +21,13 @@ public class TestCalculadoraV2 {
 	
 	@Before
 	public void init() {
-		when(cloudGoogle.sumaExterna(5.0,5.0)).thenReturn(10.0);
-	}
-	
-	@Test
-	public void testSuma() {
-		double resSuma = 10.0;
-		assertEquals(resSuma,calculadora.suma(5.0,5.0),0.1);
+		when(cloudGoogle.sumaExterna(6.0,8.0)).thenReturn(14.0);
 	}
 	
 	@Test
 	public void testSumaCloud() {				
-		double resSuma = 10.0;
-		assertEquals(resSuma,calculadora.sumaCloud(5.0,5.0),0.1);
+		double resSuma = 14.0;
+		assertEquals(resSuma,calculadora.suma(6.0,8.0),0.1);
 	}
 	
 }
