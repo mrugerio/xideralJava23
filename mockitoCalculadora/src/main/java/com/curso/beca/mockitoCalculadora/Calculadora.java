@@ -7,8 +7,10 @@ public class Calculadora {
 	CloudCalculadora cloudCalc;
 	
 	double suma(double a,double b) {
+		a += 4;
+		b += 5;
 		double resultadoSuma = cloudCalc.sumaExterna(a,b);
-		return resultadoSuma;
+		return resultadoSuma * 2;
 	}
 
 }
