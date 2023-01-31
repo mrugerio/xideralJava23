@@ -1,4 +1,4 @@
-package com.curso.v1;
+package com.curso.v2;
 
 public class Suma {
 	
