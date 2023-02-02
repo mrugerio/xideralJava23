@@ -1,7 +1,9 @@
 package com.curso;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Principal {
 	
@@ -22,7 +24,23 @@ public class Principal {
 		//Ordenar por nombre
 		//Lista de nombres
 		
-		List<String> nombres;
+		//QUE QUIERO
+		List<String> nombres =
+				listEmpledos.stream().parallel()
+				.filter(x -> x.getSalary()<400)
+				//.peek(System.out::println)
+				.peek(z -> z.incrementoSalario(200))
+				//.peek(System.out::println)
+				.filter(e -> e.getNombre().length()>6)
+				//.peek(System.out::println)
+				.sorted(Comparator.comparing(Employee::getNombre))
+				//.peek(System.out::println)
+				.map(y -> y.getNombre())
+				//.peek(System.out::println)
+				.collect(Collectors.toList());
+		
+		System.out.println(nombres);
+				
 		
 	}
 

@@ -41,5 +41,10 @@ public class Employee {
 		return "Employee [id=" + id + ", nombre=" + nombre + ", salary=" + salary + "]";
 	}
 	
+	public Employee incrementoSalario(double incremento) {
+		salary += incremento;
+		return this;
+	}
+	
 
 }
