@@ -1,0 +1,12 @@
+{
+  "bracketSameLine": true,
+  "trailingComma": "none",
+  "overrides": [
+    {
+      "files": ["*.js", "*.ts"],
+      "options": {
+        "tabWidth": 4
+      }
+    }
+  ]
+}
