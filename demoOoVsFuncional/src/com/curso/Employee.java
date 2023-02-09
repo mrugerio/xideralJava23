@@ -6,6 +6,18 @@ public class Employee {
 	private String nombre;
 	private double salary;
 	
+	public Employee() {
+	}
+	
+	public Employee(String nombre) {
+		this.nombre = nombre;
+	}
+	
+	public Employee(int id, String nombre) {
+		this.id = id;
+		this.nombre = nombre;
+	}
+	
 	public Employee(int id, String nombre, double salary) {
 		this.id = id;
 		this.nombre = nombre;
