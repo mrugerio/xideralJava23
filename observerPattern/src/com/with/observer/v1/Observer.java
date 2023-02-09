@@ -6,6 +6,9 @@ public abstract class Observer {
 	
 	Observer(Subject sb){
 		this.sb = sb;
+		//sb de la instancia de clase
+		//sb del parametro
+		//ambas apuntan al mismo objeto
 		sb.attach(this);
 	}
 	

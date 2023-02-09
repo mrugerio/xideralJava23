@@ -6,22 +6,38 @@ public class Principal {
 		
 		Mouse mouse = new Mouse();
 		
-		Observer o1 = new Text("Hello",mouse);
+		//mouse.click();
+		//System.out.println("---------");
+
+		new Text("Hello",mouse);
+		
+		System.out.println(mouse == mouse.listaObservers.get(0).sb);
 		
 		mouse.click();
 		System.out.println("---------");
 		
-		Observer o2 = new Image("Duck",mouse);
-		Observer o3 = new ScrollBar(mouse);
-		
+		new Image("Duck",mouse);
+		ScrollBar scroll = new ScrollBar(mouse);
+
+		System.out.println(mouse == mouse.listaObservers.get(1).sb);
+		System.out.println(mouse == mouse.listaObservers.get(2).sb);
+
 		mouse.click();
 		System.out.println("---------");
 		
-		Observer o4 = new Gif("Java",mouse);
+		new Gif("Java",mouse);
+		System.out.println(mouse == mouse.listaObservers.get(3).sb);
 		
+		
+		//DETACH IMAGE
+		
+		mouse.detach(mouse.listaObservers.get(1));
 		mouse.click();
-		System.out.println("---------");
-	
+		System.out.println("-----****----");
+		
+		mouse = null;
+		
+		((Mouse)(scroll.sb)).click();
 		
 	}
 

@@ -16,6 +16,7 @@ public abstract class Subject {
 	}
 
 	void notificar() {
+		//System.out.println("*Notificar Observers*");
 		for(Observer o:listaObservers)
 			o.update();
 	}
