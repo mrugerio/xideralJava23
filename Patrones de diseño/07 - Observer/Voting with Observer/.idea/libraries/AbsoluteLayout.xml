@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="AbsoluteLayout">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Ejecutable/lib/AbsoluteLayout.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Ejecutable/lib/jcommon-1.0.23.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
