@@ -1,0 +1,26 @@
+
+
+Version:	3.12
+CmdLine:	E:\Escuela\UADY\4to Semestre\Diseño de Software\Unidad 4\U4 T8\Ejecutble\VotingSystem.exe --l4j-debug
+WOW64:		yes
+Working dir:	E:\Escuela\UADY\4to Semestre\Diseño de Software\Unidad 4\U4 T8\Ejecutble\.
+Java min ver:	1.008.000
+Java max ver:	
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Check launcher:	C:\Program Files\Java\jre1.8.0_251\bin\javaw.exe (OK)
+Match:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_251
+Check launcher:	C:\Program Files\Java\jre1.8.0_251\bin\javaw.exe (OK)
+Match:		1.008.000_251
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\13.0.1
+Check launcher:	C:\Program Files\Java\jdk-13.0.1\bin\javaw.exe (OK)
+Match:		1.013.000_001
+Runtime used:	1.013.000_001 (64-bit)
+Launcher:	C:\Program Files\Java\jdk-13.0.1\bin\javaw.exe
+Launcher args:	-jar "E:\Escuela\UADY\4to Semestre\Diseño de Software\Unidad 4\U4 T8\Ejecutble\VotingSystem.exe"
+Args length:	96/32768 chars
+Exit code:	0
